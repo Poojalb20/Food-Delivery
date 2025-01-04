@@ -1,0 +1,146 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+.Navbar-menu{
+    list-style: none;
+    display: flex;
+    gap:30px;
+    font-size: 20px;
+    color:blueviolet;
+}
+
+.Navbar-right{
+    display: flex;
+    gap:40px;
+    align-items: center;
+}
+
+.Navbar-right button{
+    background: transparent;
+    color: #495574;
+    font-size:18px;
+    border:1px solid tomato;
+    padding: 15px 20px;
+    border-radius: 50px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.Navbar-right button:hover{
+    background-color:rgb(233, 148, 155)
+}
+
+.Navbar .active{
+    padding-bottom:2px;
+    border-bottom: 2px solid #49557e;
+}
+
+.Navbar li{
+    cursor: pointer;
+}
+
+.Navbar-cart-icon{
+    position:relative;
+}
+
+.Navbar-cart-icon .dot{
+    position:absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top: -8px;
+    right:-8px;
+}
+
+
+@media (max-width:1050px){
+    .Navbar .logo{
+      width:140px;
+    }
+  
+    .Navbar-menu{
+      gap:20px;
+      font-size:17px;
+    }
+  
+    .Navbar-right{
+      gap:30px;
+    }
+  
+    .Navbar-right img{
+      width:22px;
+    }
+  
+    .Navbar button{
+      padding:8px 25px;
+    }
+  }
+  
+  @media (max-width:900px){
+    .Navbar .logo{
+      width:120px;
+    }
+  
+    .Navbar-menu{
+      gap:15px;
+      font-size:15px;
+    }
+  
+    .Navbar-right{
+      gap:20px;
+    }
+  
+    .Navbar-right img{
+      width:20px;
+    }
+  
+    .Navbar button{
+      padding:7px 20px;
+    }
+  }
+
+  .navbar-profile{
+    position: relative;
+}
+.nav-profile-dropdown{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    right: 0;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff2ef;
+    border-radius: 6px;
+    gap: 10px;
+    padding: 12px, 25px;
+    list-style: none;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+  }
+  .nav-profile-dropdown li{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+  }
+  .nav-profile-dropdown img{
+  width: 20px;
+  }
+  .nav-profile-dropdown li:hover{
+      color: tomato;
+  }
+  
+  
+  @media(max-width:800px){
+    .Navbar-menu{
+      display:none;
+    }
+  }
