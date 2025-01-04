@@ -19,7 +19,7 @@ const StoreContextProvider  =(props)=>{
  },[]) */
 
 
- const url = "http://localhost:4000"
+ const url = "https://food-delivery-1-s1zq.onrender.com"
  const [cartItem, setCartItem] = useState({});
 
 
